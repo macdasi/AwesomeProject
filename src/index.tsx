@@ -7,6 +7,7 @@ import {
     Text,
     View
 } from 'react-native';
+import Button from "react-native-button";
 
 interface Props {
 
@@ -17,12 +18,20 @@ interface State {
 }
 
 export default class App extends Component<Props, State> {
+
+    onPress = () => {
+        alert("It's working fine");
+    }
+
     render() {
-            return (
-                <View style={styles.container}>
-            <Text style={styles.text}>
-            Welcome to React Native!
-            </Text>
+        return (
+            <View style={styles.container}>
+                <Text style={styles.text}>
+                    Welcome to React Native!
+                </Text>
+                <Button onPress={this.onPress}>
+                    Hi there!
+                </Button>
             </View>
         );
     }
