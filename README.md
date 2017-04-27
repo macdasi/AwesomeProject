@@ -1,5 +1,5 @@
 # This project
-is a react native project using type script 
+is a react native project using type script
 ## to start
 https://medium.com/react-weekly/react-native-and-typescript-ad57b7413ead
 
